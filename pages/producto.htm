@@ -1,0 +1,441 @@
+title = "Producto"
+layout = "default"
+url = "/producto"
+==
+
+<section class="section pb-0" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="tiny-single-item">
+                    <div class="tiny-slide"><img src="{{ 'assets/images/shop/product/single-2.jpg' | theme}}" class="img-fluid rounded" alt=""></div>
+                    <div class="tiny-slide"><img src="{{ 'assets/images/shop/product/single-3.jpg' | theme}}" class="img-fluid rounded" alt=""></div>
+                    <div class="tiny-slide"><img src="{{ 'assets/images/shop/product/single-4.jpg' | theme}}" class="img-fluid rounded" alt=""></div>
+                    <div class="tiny-slide"><img src="{{ 'assets/images/shop/product/single-5.jpg' | theme}}" class="img-fluid rounded" alt=""></div>
+                    <div class="tiny-slide"><img src="{{ 'assets/images/shop/product/single-6.jpg' | theme}}" class="img-fluid rounded" alt=""></div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-7 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="section-title ms-md-4">
+                    <h2 class="title">Camiseta</h2>
+                    <h3 class="text-muted">21€ <del class="text-danger ms-2">25€</del> </h3>
+                    <ul class="list-unstyled text-warning h5 mb-0">
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                    </ul>
+                    
+                    <h4 class="mt-4 py-2">Descripción:</h4>
+                    <p class="text-muted">Camiseta de tirantes, de varios colores con tipografía y logo de marca.</p>
+
+                    <div class="row mt-4 pt-2">
+                        <div class="col-lg-6 col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="mb-0"><b>Tu talla:</b></div>
+                                <ul class="list-unstyled mb-0 ms-3">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">S</a></li>
+                                    <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">M</a></li>
+                                    <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">L</a></li>
+                                    <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">XL</a></li>
+                                </ul>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                            <div class="d-flex shop-list align-items-center">
+                                <div class="mb-0"><b>Cantidad:</b></div>
+                                <div class="qty-icons ms-3">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-icon btn-soft-primary minus">-</button>
+                                    <input min="0" name="quantity" value="0" type="number" class="btn btn-icon btn-soft-primary qty-btn quantity">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-soft-primary plus">+</button>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                    <div class="mt-4 pt-2">
+                        <a href="/checkout" class="btn btn-primary">Comprar ahora</a>
+                        <a href="/carrito" class="btn btn-soft-primary ms-2">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-pills shadow flex-column flex-sm-row d-md-inline-flex mb-0 p-1 rounded position-relative overflow-hidden" id="pills-tab" role="tablist">
+                    <li class="nav-item m-1">
+                        <a class="nav-link py-2 px-5 active rounded" id="description-data" data-bs-toggle="pill" href="#description" role="tab" aria-controls="description" aria-selected="false">
+                            <div class="text-center">
+                                <h5 class="mb-0" style="font-size: 18px;">Descripción</h5>
+                            </div>
+                        </a><!--end nav link-->
+                    </li><!--end nav item-->
+                    
+                    <li class="nav-item m-1">
+                        <a class="nav-link py-2 px-5 rounded" id="additional-info" data-bs-toggle="pill" href="#additional" role="tab" aria-controls="additional" aria-selected="false">
+                            <div class="text-center">
+                                <h5 class="mb-0" style="font-size: 18px;">Información Adicional</h5>
+                            </div>
+                        </a><!--end nav link-->
+                    </li><!--end nav item-->
+
+                    <li class="nav-item m-1">
+                        <a class="nav-link py-2 px-5 rounded" id="review-comments" data-bs-toggle="pill" href="#review" role="tab" aria-controls="review" aria-selected="false">
+                            <div class="text-center">
+                                <h5 class="mb-0" style="font-size: 18px;">Reseñas</h5>
+                            </div>
+                        </a><!--end nav link-->
+                    </li><!--end nav item-->
+                </ul>
+                
+                <div class="tab-content mt-5" id="pills-tabContent">
+                    <div class="card border-0 tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-data">
+                        <p class="text-muted mb-0">Camiseta de tirantes en varios colores, con estampados de logos y tipografias.</p>
+                    </div>
+
+                    <div class="card border-0 tab-pane fade" id="additional" role="tabpanel" aria-labelledby="additional-info">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 100px;">Colores</td>
+                                    <td class="text-muted">Rojo, Blanco, Negro, Naranja</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Material</td>
+                                    <td class="text-muted">Algodón</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Tallas</td>
+                                    <td class="text-muted">S, M, L, XL, XXL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="card border-0 tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-comments">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="media-list list-unstyled mb-0">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div class="pe-3">
+                                                    <img src="{{ 'assets/images/client/01.jpg' | theme}}" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                </div>
+                                                <div class="flex-1 commentor-detail">
+                                                    <h6 class="mb-0">Lorenzo Gómez</h6>
+                                                    <small class="text-muted">15 Ago 2023</small>
+                                                </div>
+                                            </div>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="text-muted fst-italic p-3 bg-light rounded">" Camiseta muy cómoda "</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                <form class="ms-lg-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5>Escribe tu reseña:</h5>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <h6 class="small fw-bold">Tu Satisfacción:</h6>
+                                            <a href="javascript:void(0)" class="d-inline-block me-3">
+                                                <ul class="list-unstyled mb-0 small">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                </ul>
+                                            </a>
+
+                                            <a href="javascript:void(0)" class="d-inline-block me-3">
+                                                <ul class="list-unstyled mb-0 small">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                </ul>
+                                            </a>
+
+                                            <a href="javascript:void(0)" class="d-inline-block me-3">
+                                                <ul class="list-unstyled mb-0 small">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                </ul>
+                                            </a>
+
+                                            <a href="javascript:void(0)" class="d-inline-block me-3">
+                                                <ul class="list-unstyled mb-0 small">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                </ul>
+                                            </a>
+
+                                            <a href="javascript:void(0)" class="d-inline-block">
+                                                <ul class="list-unstyled mb-0 small">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="mb-3">
+                                                <label class="form-label">Tu Reseña:</label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                    <textarea id="message" placeholder="Escribir reseña..." rows="5" name="message" class="form-control ps-5" required=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+    
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Nombre <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                                    <input id="name" name="name" type="text" placeholder="Nombre" class="form-control ps-5" required="">
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+    
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Tu Email <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                    <input id="email" type="email" placeholder="Email" name="email" class="form-control ps-5" required="">
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+    
+                                        <div class="col-md-12">
+                                            <div class="send d-grid">
+                                                <button type="submit" class="btn btn-primary">Envíar</button>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </form><!--end form-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60" style="margin-bottom: 50px;">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-0" style="font-size: 20px;">Productos Relacionados</h2>
+            </div><!--end col-->
+
+            <div class="col-12 mt-4">
+                <div class="tiny-four-item">
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-danger">Últimas Unidades</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s1.jpg' | theme}}" class="img-fluid" alt=""></a> 
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-1.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Camiseta</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">16€ <del class="text-danger ms-2">21€</del> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tiny-slide">                            
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s2.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-2.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Mochila</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">21€ <del class="text-danger ms-2">25€</del> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s3.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-3.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Reloj</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">5€ <span class="text-success ms-1">30% descuento</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s4.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-4.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Mochila</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">18€ <del class="text-danger ms-2">22€</del> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s5.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-5.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Chaqueta</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">33€</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s6.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-6.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Camisa</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">14.50€ <del class="text-danger ms-2">16.50€</del> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s7.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s-7.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Cascos</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">9.99€ <span class="text-success ms-2">20% descuento</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <div class="card shop-list border-0 position-relative m-2">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Descuento</a></li>
+                            </ul>
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="/producto"><img src="{{ 'assets/images/shop/product/s8.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                <a href="/producto" class="overlay-work">
+                                    <img src="{{ 'assets/images/shop/product/s8.jpg' | theme}}" class="img-fluid" alt="">
+                                </a>
+                                <ul class="list-unstyled shop-icons">
+                                    <li class="mt-2"><a href="/producto" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
+                                    <li class="mt-2"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                <a href="/producto" class="text-dark product-name h6">Bolso</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="text-dark small fst-italic mb-0 mt-1">22€ <del class="text-danger ms-2">25€</del> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->

@@ -1,0 +1,260 @@
+title = "Pagos"
+layout = "default"
+url = "/checkout"
+==
+
+        
+<!-- Hero Start -->
+<section class="bg-half-170 bg-light d-table w-100" style="background: url('{{ 'assets/images/principal/fondo-carrito.png' | theme}}') center center;">
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="pages-heading">
+                    <h1 class="title mb-0" style="color: #21305c;"> Finalizar Compra </h1>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+        
+        <div class="position-breadcrumb">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+                <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
+                    <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="/tienda">Tienda</a></li>
+                    <li class="breadcrumb-item"><a href="/carrito">Carrito</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ul>
+            </nav>
+        </div>
+    </div> <!--end container-->
+</section><!--end section-->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-color-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Start -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <div class="card rounded shadow p-4 border-0">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="h5 mb-0" style="font-size: 25px;">Tu carrito</h2>
+                        <span class="badge text-bg-primary rounded-pill">3</span>
+                    </div>
+                    <ul class="list-group mb-3 border">
+                        <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                            <div>
+                                <h6 class="my-0">Chaqueta</h6>
+                                <small class="text-muted">x1</small>
+                            </div>
+                            <span class="text-muted">12€</span>
+                        </li>
+                        <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                            <div>
+                                <h6 class="my-0">Pantalón</h6>
+                                <small class="text-muted">x1</small>
+                            </div>
+                            <span class="text-muted">8€</span>
+                        </li>
+                        <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                            <div>
+                                <h6 class="my-0">Flores</h6>
+                                <small class="text-muted">x1</small>
+                            </div>
+                            <span class="text-muted">5€</span>
+                        </li>
+                        <li class="d-flex justify-content-between bg-light p-3 border-bottom">
+                            <div class="text-success">
+                                <h6 class="my-0">CÓDIGO PROMOCIONAL</h6>
+                                <small>DESCUENTO05</small>
+                            </div>
+                            <span class="text-success">-5€</span>
+                        </li>
+                        <li class="d-flex justify-content-between p-3">
+                            <span>Total:</span>
+                            <strong>20€</strong>
+                        </li>
+                    </ul>
+            
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Código promocional">
+                            <button type="submit" class="btn btn-secondary">Introducir</button>
+                        </div>
+                    </form>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-7 col-lg-8">
+                <div class="card rounded shadow p-4 border-0">
+                    <h2 class="mb-3" style="font-size: 25px;">Dirección de Envío</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Nombre" value=""
+                                    required>
+                                <div class="invalid-feedback">
+                                    Escriba un nombre de usuario válido.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Apellidos" value=""
+                                    required>
+                                <div class="invalid-feedback">
+                                    Escriba unos apellidos válidos.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">Nombre de usuraio</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text bg-light text-muted border">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                                    <div class="invalid-feedback"> Escriba un nombre de usuario válido. </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="info@nuvolsderegals.es">
+                                <div class="invalid-feedback">
+                                    Escriba un correo electrónico válido.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="address" placeholder="Calle, Núm., Ciudad..."
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">Dirección 2 <span
+                                        class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="address2"
+                                    placeholder="Calle, Núm., Ciudad...">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">Ciudad</label>
+                                <select class="form-select form-control" id="country" required>
+                                    <option value="">Elegir...</option>
+                                    <option>Valencia</option>
+                                    <option>Castellón</option>
+                                    <option>Alicante</option>
+                                    <option>Barcelona</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Selecciona una ciudad válida.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">Provncia</label>
+                                <select class="form-select form-control" id="state" required>
+                                    <option value="">Elegir...</option>
+                                    <option>Valencia</option>
+                                    <option>Castellón</option>
+                                    <option>Alicante</option>
+                                    <option>Barcelona</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Selecciona una provincia válida.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">C.P.</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Selecciona un código postal válido.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-check mt-4 pt-4 border-top">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">La dirección de envío es la misma que la dirección de facturación.</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">He leído y acepto los terminos de la <a href="/politica-privacidad">política de privacidad.</a></label>
+                        </div>
+
+
+                        <h2 class="mb-3 mt-4 pt-4 border-top" style="font-size: 25px;">Pago</h2>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                    checked required>
+                                <label class="form-check-label" for="credit">Tarjeta Crédito</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                    required>
+                                <label class="form-check-label" for="debit">Tarjeta Débito</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                    required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Nombre del Titutal</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Nombre que aparece en la tarjeta</small>
+                                <div class="invalid-feedback">
+                                    Escriba un nombre válido.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Núm. de la Tarjeta</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Escriba un número válido.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration" class="form-label">Expiración</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Escriba una fecha válida.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Escriva un códio válido.
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="w-100 btn btn-primary" type="submit">Finalizar la Compra</button>
+                    </form>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->

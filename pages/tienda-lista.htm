@@ -1,0 +1,653 @@
+title = "Tienda en Lista"
+layout = "default"
+url = "/tienda-lista"
+==
+
+<!-- Hero Start -->
+<section class="bg-half-170 bg-light d-table w-100">
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="pages-heading">
+                    <h1 class="title mb-0">Tienda</h1>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+        
+        <div class="position-breadcrumb">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+                <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
+                    <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+                </ul>
+            </nav>
+        </div>
+    </div> <!--end container-->
+</section><!--end section-->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-color-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Start Products -->
+<section class="section" style="margin-bottom: 50px;">
+
+    <!-- Start Categories -->
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="card features feature-primary explore-feature border-0 rounded text-center">
+                    <div class="card-body">
+                        <i class="uil uil-house-user" style="font-size: 50px; color: #21305c;"></i>
+                        <div class="content mt-3">
+                            <h3 class="mb-0"><a href="/tienda" class="title text-dark">Familia</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="card features feature-primary explore-feature border-0 rounded text-center">
+                    <div class="card-body">
+                        <i class="uil uil-smile-beam" style="font-size: 50px; color: #fda354;"></i>
+                        <div class="content mt-3">
+                            <h3 class="mb-0"><a href="/tienda" class="title text-dark">Amigos/as</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="card features feature-primary explore-feature border-0 rounded text-center">
+                    <div class="card-body">
+                        <i class="uil uil-heart" style="font-size: 50px; color: #21305c;"></i>
+                        <div class="content mt-3">
+                            <h3 class="mb-0"><a href="/tienda" class="title text-dark">Parejas</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="card features feature-primary explore-feature border-0 rounded text-center">
+                    <div class="card-body">
+                        <i class="uil uil-glass-martini-alt" style="font-size: 50px; color: #fda354;"></i>
+                        <div class="content mt-3">
+                            <h3 class="mb-0"><a href="/tienda" class="title text-dark">Eventos</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="card features feature-primary explore-feature border-0 rounded text-center">
+                    <div class="card-body">
+                        <i class="uil uil-fire" style="font-size: 50px; color: #21305c;"></i>
+                        <div class="content mt-3">
+                            <h3 class="mb-0"><a href="/tienda" class="title text-dark">Falleros/as</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="card features feature-primary explore-feature border-0 rounded text-center">
+                    <div class="card-body">
+                        <i class="uil uil-music" style="font-size: 50px; color: #fda354;"></i>
+                        <div class="content mt-3">
+                            <h3 class="mb-0"><a href="/tienda" class="title text-dark">Músicos</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+    <!-- Start Categories -->
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="card border-0 sidebar sticky-bar">
+                    <div class="card-body p-0">
+                        <div class="d-flex justify-content-md-between align-items-center">
+                            <div class="form custom-form">
+                                <div class="mb-0">
+                                    <select class="form-select form-control" aria-label="Default select example" id="Sortbylist-job">
+                                        <option selected>Productos Nuevos</option>
+                                        <option>Productos Populares</option>
+                                        <option>De precio más bajo a más alto</option>
+                                        <option>De precio más alto a más bajo</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mx-2">
+                                <a href="/tienda" class="h5 text-muted"><i class="uil uil-apps"></i></a>
+                            </div>
+
+                            <div>
+                                <a href="/tienda-lista" class="h5 text-muted"><i class="uil uil-list-ul"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- color -->
+                        <div class="widget mt-4 pt-2">
+                            <h2 class="widget-title" style="font-size: 25px;">Color</h2>
+                            <ul class="list-unstyled mt-4 mb-0">
+                                <li class="list-inline-item"><a href="/tienda-lista" class="btn btn-sm btn-icon btn-pills btn-primary"><span class="d-none">.</span></a></li>
+                                <li class="list-inline-item"><a href="/tienda-lista" class="btn btn-sm btn-icon btn-pills btn-danger"><span class="d-none">.</span></a></li>
+                                <li class="list-inline-item"><a href="/tienda-lista" class="btn btn-sm btn-icon btn-pills btn-success"><span class="d-none">.</span></a></li>
+                                <li class="list-inline-item"><a href="/tienda-lista" class="btn btn-sm btn-icon btn-pills btn-info"><span class="d-none">.</span></a></li>
+                                <li class="list-inline-item"><a href="/tienda-lista" class="btn btn-sm btn-icon btn-pills btn-secondary"><span class="d-none">.</span></a></li>
+                                <li class="list-inline-item"><a href="/tienda-lista" class="btn btn-sm btn-icon btn-pills btn-warning"><span class="d-none">.</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- COlor -->
+
+                        <!-- Top Products -->
+                        <div class="widget mt-4 pt-2">
+                            <h2 class="widget-title" style="font-size: 25px;">Más vendidos</h2>
+                            <ul class="list-unstyled mt-4 mb-0">
+                                <li class="d-flex align-items-center">
+                                    <a href="/producto">
+                                        <img src="{{ 'assets/images/shop/product/s1.jpg' |theme}}" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
+                                    </a>
+                                    <div class="flex-1 content ms-3">
+                                        <a href="/producto" class="text-dark h6">Camiseta</a>
+                                        <h3 class="text-dark small fst-italic mb-0 mt-1">18.00€</h3>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mt-2">
+                                    <a href="/producto">
+                                        <img src="{{ 'assets/images/shop/product/s3.jpg' |theme}}" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
+                                    </a>
+                                    <div class="flex-1 content ms-3">
+                                        <a href="/producto" class="text-dark h6">Reloj</a>
+                                        <h3 class="text-dark small fst-italic mb-0 mt-1">18.00€ <del class="text-danger ms-2">22.00€</del> </h3>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mt-2">
+                                    <a href="/producto">
+                                        <img src="{{ 'assets/images/shop/product/s6.jpg' |theme}}" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
+                                    </a>
+                                    <div class="flex-1 content ms-3">
+                                        <a href="/producto" class="text-dark h6">Chaqueta</a>
+                                        <h3 class="text-dark small fst-italic mb-0 mt-1">18.00€</h3>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mt-2">
+                                    <a href="/producto">
+                                        <img src="{{ 'assets/images/shop/product/s8.jpg' |theme}}" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
+                                    </a>
+                                    <div class="flex-1 content ms-3">
+                                        <a href="/producto" class="text-dark h6">Bolso</a>
+                                        <h3 class="text-dark small fst-italic mb-0 mt-1">18.00€</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-9 col-md-8 col-12 mt-5 pt-2 mt-sm-0 pt-sm-0">
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s1.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <div class="overlay-work">
+                                            <div class="py-2 bg-soft-dark rounded-bottom out-stock">
+                                                <h3 class="mb-0 text-center">Sin stock</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Camiseta</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">16.00€ <del class="text-danger ms-2">21.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s2.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-2.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Mochila</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">21.00€ <del class="text-danger ms-2">25.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Descuento</a></li>
+                            </ul>
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s3.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-3.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Reloj</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">5.00€ <span class="text-success ms-1">30% off</span> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s4.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <div class="overlay-work">
+                                            <div class="py-2 bg-soft-dark rounded-bottom out-stock">
+                                                <h3 class="mb-0 text-center">Sin stock</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Mochila</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">18.00€ <del class="text-danger ms-2">22.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s5.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-5.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Chaqueta</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">33.00€</h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s6.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-6.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Chaqueta</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">24.50€ <del class="text-danger ms-2">26.50€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Descuento</a></li>
+                            </ul>
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s7.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <div class="overlay-work">
+                                            <div class="py-2 bg-soft-dark rounded-bottom out-stock">
+                                                <h3 class="mb-0 text-center">Sin stock</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Cascos</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">9.99€ <span class="text-success ms-2">20% off</span> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s8.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-8.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Bolso</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">22.00€ <del class="text-danger ms-2">25.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s9.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-9.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Sudadera</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">16.00€ <del class="text-danger ms-2">21.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-primary">Nuevo</a></li>
+                            </ul>
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s10.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-10.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Cartera</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">21.00€</h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Descuento</a></li>
+                            </ul>
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s11.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-11.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Zapatillas</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">5.00€ <span class="text-success ms-1">30% off</span> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s12.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-12.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Chaqueta</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">18.00€ <del class="text-danger ms-2">22.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s13.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-13.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Silla</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">16.00€ <del class="text-danger ms-2">21.00€</del> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <ul class="label list-unstyled mb-0">
+                                <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-primary">Nuevo</a></li>
+                            </ul>
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s14.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-14.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Zapatos</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">21.00€</h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0 shadow position-relative">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="shop-image position-relative overflow-hidden">
+                                        <a href="/producto"><img src="{{ 'assets/images/shop/product/s15.jpg' | theme}}" class="img-fluid" alt=""></a>
+                                        <a href="/producto" class="overlay-work">
+                                            <img src="{{ 'assets/images/shop/product/s-15.jpg' | theme}}" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body content p-4">
+                                        <a href="/producto" class="text-dark product-name h6">Pantalón</a>
+                                        <div class="d-lg-flex align-items-center mt-2 mb-3">
+                                            <h3 class="text-muted small fst-italic mb-0 me-3">5.00€ <span class="text-success ms-1">30% off</span> </h3>
+                                        </div>
+                                        <p class="para-desc text-muted mb-1">Breve descripción del producto.</p>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mt-2 list-inline-item"><a href="/carrito" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="shopping-cart" class="icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--end col-->
+                            </div> <!--end row-->
+                        </div><!--end blog post-->
+                    </div><!--end col-->
+
+                    <!-- PAGINATION START -->
+                    <div class="col-12 mt-4 pt-2">
+                        <ul class="pagination justify-content-center mb-0">
+                            <li class="page-item"><a class="page-link" href="/tienda-lista" aria-label="Previous"> Anterior</a></li>
+                            <li class="page-item active"><a class="page-link" href="/tienda-lista">1</a></li>
+                            <li class="page-item"><a class="page-link" href="/tienda-lista">2</a></li>
+                            <li class="page-item"><a class="page-link" href="/tienda-lista">3</a></li>
+                            <li class="page-item"><a class="page-link" href="/tienda-lista" aria-label="Next">Siguiente</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    <!-- PAGINATION END -->
+                </div><!--end row-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Products -->
+
+
