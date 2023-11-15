@@ -13028,7 +13028,7 @@ a.text-muted:focus {
 .btn-soft-primary {
   background-color: rgba(47, 85, 212, 0.05) !important;
   border: 1px solid rgba(47, 85, 212, 0.05) !important;
-  color: #21305c !important;
+  color: #ffffff !important;
   -webkit-box-shadow: 0 3px 5px 0 rgba(253, 163, 84, 0.4);
   box-shadow: 0 3px 5px 0 rgba(253, 163, 84, 0.4);
 }
