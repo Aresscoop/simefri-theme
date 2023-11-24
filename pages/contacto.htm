@@ -2,59 +2,148 @@ title = "Contacto"
 layout = "default"
 url = "/contacto"
 ==
+
+<!-- Hero Start -->
+<section class="bg-half-170 bg-light d-table w-100" style="background: url('{{ 'assets/images/principal/fondo-contacto.png' | theme}}') center center;">
+    <div class="bg-overlay bg-black" style="opacity: 0.4;"></div>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="pages-heading">
+                    <h1 class="title mb-0 text-white">Contacto</h1>
+                </div>
+            </div>  <!--end col-->
+        </div><!--end row-->
         
-        <!-- Hero Start -->
-        <section class="vh-100 bg-half-170 d-flex align-items-center" style="background: url('{{ 'assets/images/principal/fondo-contacto.png' | theme}}') center center;">
-            <!-- <div class="bg-overlay"></div> -->
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 offset-lg-6 col-md-7 offset-md-5">
-                        <div class="title-heading mt-5 pt-4">
-                            <h1 class="heading text-white">Contacta con nosotros!</h1>
-                            <p class="text-white">Si necesitas información sobre cualquiera de nuestros servicios o tienes alguna pregunta al respecto, no dudes en contactar con nosotros. En Simefri queremos brindarte el mejor servicio y estaremos encantados de resolver cualquier duda que tengas!</p>
-                            
-                            <div class="d-flex contact-detail align-items-center mt-3">
-                                <div class="icon">
-                                    <i data-feather="mail" class="fea icon-m-md text-white me-3"></i>
+        <div class="position-breadcrumb">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+                <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
+                    <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                </ul>
+            </nav>
+        </div>
+    </div> <!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<!-- Start Contact -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6  mt-4 pt-2">
+                <div class="card shadow rounded border-0">
+                    <div class="card-body py-5">
+                        <h2 class="h4 card-title">Contacta con nosotros!</h2>
+                        <div class="custom-form mt-3">
+                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                <p id="error-msg" class="mb-0"></p>
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Tu Nombre <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="user" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="text" class="form-control ps-5" placeholder="Nombre:">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Email <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Email:">
+                                            </div>
+                                        </div> 
+                                    </div><!--end col-->
+
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Asunto</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <input name="subject" id="subject" class="form-control ps-5" placeholder="Asunto:">
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Mensaje <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="message-circle" class="fea icon-sm icons clearfix"></i>
+                                                <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Escribir mensaje..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex-1 content">
-                                    <h2 class="h5 title fw-bold mb-0 text-white">Email</h2>
-                                    <a href="mailto:hola@simefri.es" class="text-white">hola@simefri.es</a>
-                                </div>
-                            </div>
-                            
-                            <div class="d-flex contact-detail align-items-center mt-3">
-                                <div class="icon">
-                                    <i data-feather="phone" class="fea icon-m-md text-white me-3"></i>
-                                </div>
-                                <div class="flex-1 content">
-                                    <h2 class="h5 title fw-bold mb-0 text-white">Teléfono</h2>
-                                    <a href="tel:+34687926516" class="text-white">687 926 516</a>
-                                </div>
-                            </div>
-                            
-                            <div class="d-flex contact-detail align-items-center mt-3">
-                                <div class="icon">
-                                    <i data-feather="map-pin" class="fea icon-m-md text-white me-3"></i>
-                                </div>
-                                <div class="flex-1 content">
-                                    <h2 class="h5 title fw-bold mb-0 text-white">Dirección</h2>
-                                    <p class="text-white">C/ del Canonge Tárrega, Valencia (Valencia) 46014</p>
-                                    <a href="https://maps.app.goo.gl/TjVcaUD8kusdeuWY9" data-type="iframe" target="_blank" class="video-play-icon text-white lightbox">Ver en Google Maps</a>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled social-icon mb-0 mt-4">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social text-white"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social text-white"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social text-white"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social text-white"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="github" class="fea icon-sm fea-social text-white"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="youtube" class="fea icon-sm fea-social text-white"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="gitlab" class="fea icon-sm fea-social text-white"></i></a></li>
-                            </ul><!--end icon-->
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container--> 
-        </section><!--end section-->
-        <!-- Hero End -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button type="submit" id="submit" name="send" class="btn btn-primary">Envíar Mensaje</button>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </form>
+                        </div><!--end custom-form-->
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-8 col-md-6 ps-md-3 pe-md-3 mt-4 pt-2">
+                <div class="card map map-height-two rounded map-gray border-0">
+                    <div class="card-body p-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1540.3133260863228!2d-0.3997116!3d39.45516969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f109900a0c7%3A0x642cb4ba74179a9e!2sSimefri%20Refrigeracion-Climatizacion!5e0!3m2!1ses!2ses!4v1700843098569!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+    
+    <div class="container mt-100 mt-60">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 text-center features feature-primary feature-clean">
+                    <div class="icons text-center mx-auto">
+                        <i class="uil uil-phone rounded h3 mb-0"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h3 class="h5 fw-bold">Teléfono</h3>
+                        <p class="text-muted">Puedes ponerte en contacto con nosotros<br> a través de este teléfono.</p>
+                        <a href="tel:+34687926516" class="read-more">687 926 516</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="card border-0 text-center features feature-primary feature-clean">
+                    <div class="icons text-center mx-auto">
+                        <i class="uil uil-envelope rounded h3 mb-0"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h3 class="h5 fw-bold">Email</h3>
+                        <p class="text-muted">También puedes envíarnos un correo<br> electrónico a esta dirección!</p>
+                        <a href="mailto:hola@simefri.es" class="read-more">hola@simefri.es</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+            
+            <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="card border-0 text-center features feature-primary feature-clean">
+                    <div class="icons text-center mx-auto">
+                        <i class="uil uil-map-marker rounded h3 mb-0"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h3 class="h5 fw-bold">Dirección</h3>
+                        <p class="text-muted">Carrer del Canonge Tárrega, 45 <br> Valencia (Valencia) 46014</p>
+                        <a href="https://maps.app.goo.gl/TjVcaUD8kusdeuWY9" target="_blank" data-type="iframe" class="video-play-icon read-more lightbox">Ver en Google Maps</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End contact -->
