@@ -13,8 +13,8 @@
         
         <!-- Css -->
         <link href="{{ 'assets/libs/tiny-slider/tiny-slider.css' | theme}}" rel="stylesheet">
-        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-        <link href="assets/libs/animate.css/animate.min.css" rel="stylesheet">
+        <link href="{{ 'assets/libs/tobii/css/tobii.min.css' | theme}}" rel="stylesheet">
+        <link href="{{ 'assets/libs/animate.css/animate.min.css' | theme}}" rel="stylesheet">
         <!-- Bootstrap Css -->
         <link href="{{ 'assets/css/bootstrap.min.css' | theme}}" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css">
         <!-- Icons Css -->
@@ -26,11 +26,11 @@
 
     <body>
         <div>
-            {% partial "header" %}
+            {% partial "site/header" %}
 
             {% page %}
 
-            {% partial "footer" %}
+            {% partial "site/footer" %}
         </div>
 
         <!-- Back to top -->
@@ -59,11 +59,11 @@
         <!-- SLIDER -->
         <script src="{{ 'assets/libs/tiny-slider/min/tiny-slider.js' | theme}}"></script>
         <!-- Parallax -->
-        <script src="assets/libs/jarallax/jarallax.min.js "></script>
+        <script src="{{ 'assets/libs/jarallax/jarallax.min.js' | theme}}"></script>
         <!-- Lightbox -->
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="{{ 'assets/libs/tobii/js/tobii.min.js' | theme}}"></script>
         <!-- Animation -->
-        <script src="assets/libs/wow.js/wow.min.js"></script>
+        <script src="{{ 'assets/libs/wow.js/wow.min.js' | theme}}"></script>
         <!-- Main Js -->
         <script src="{{ 'assets/libs/feather-icons/feather.min.js' | theme}}"></script>
         <script src="{{ 'assets/js/plugins.init.js' | theme}}"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
