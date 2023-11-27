@@ -1,0 +1,12 @@
+<div id="navigation">
+    <!-- Navigation Menu-->   
+    <ul class="navigation-menu nav-light">
+        {% for menu in menus %}
+        {% if this.site.locale == 'en' %}
+            <li class="{% if this.page.id == menu.page_id %} active {% endif %} sub-menu-item"><a href="/{{ this.site.locale}}{{menu.link}}">{{ menu.etiqueta }}</a></li>
+        {% else %}
+            <li class="{% if this.page.id == menu.page_id %} active {% endif %} sub-menu-item"><a href="{{menu.link}}">{{ menu.etiqueta }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul><!--end navigation menu-->
+</div><!--end navigation-->
